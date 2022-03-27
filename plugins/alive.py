@@ -30,7 +30,12 @@ async def _human_time_duration(seconds):
     return ', '.join(parts)
     
    
-
+  @Client.on_message(commandpro(["akg_love_u"]) & filters.group & ~filters.edited)
+async def start(client: Client, message: Message):
+    await message.reply_text(
+            text="I LOVE TOO BABY",
+        
+    )
 
     
 @Client.on_message(commandpro(["/start", "/alive", "disha", "akg"]) & filters.group & ~filters.edited)
@@ -56,11 +61,6 @@ async def start(client: Client, message: Message):
     )
     
  
-   @Client.on_message(commandpro(["akg love you"]) & filters.group & ~filters.edited)
-async def start(client: Client, message: Message):
-    await message.reply_text(
-            text="I LOVE TOO BABY",
-        
-    )
+ 
 
 
