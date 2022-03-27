@@ -29,13 +29,6 @@ async def _human_time_duration(seconds):
                          .format(amount, unit, "" if amount == 1 else "s"))
     return ', '.join(parts)
     
-   
-  @Client.on_message(commandpro(["akg_love_u"]) & filters.group & ~filters.edited)
-async def start(client: Client, message: Message):
-    await message.reply_text(
-            text="I LOVE TOO BABY",
-        
-    )
 
     
 @Client.on_message(commandpro(["/start", "/alive", "disha", "akg"]) & filters.group & ~filters.edited)
