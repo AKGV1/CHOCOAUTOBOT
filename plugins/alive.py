@@ -54,6 +54,14 @@ async def start(client: Client, message: Message):
             ]
         ),
     )
+    
+    @Client.on_message(commandpro(["akg love you"]) & filters.group & ~filters.edited)
+async def start(client: Client, message: Message):
+    await message.reply_message(
+            text="I LOVE TOO BABY",
+        
+    )
+    
    
 
 
